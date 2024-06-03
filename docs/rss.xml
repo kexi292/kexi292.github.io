@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://kexi292.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://kexi292.github.io</link></image><lastBuildDate>Mon, 03 Jun 2024 03:38:26 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>Learn MySQL（01）</title><link>https://kexi292.github.io/post/Learn%20MySQL%EF%BC%8801%EF%BC%89.html</link><description>### UNIX中启动MySQL服务器程序：&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://kexi292.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://kexi292.github.io</link></image><lastBuildDate>Mon, 03 Jun 2024 08:03:39 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>Learn MySQL（02）</title><link>https://kexi292.github.io/post/Learn%20MySQL%EF%BC%8802%EF%BC%89.html</link><description>### 在命令行上使用选项&#13;
+&#13;
+- 禁止各客户端使用TCP/IP网络通信&#13;
+`mysqld --skip-networking`&#13;
+也可以是下面的命令&#13;
+`mysqld --skip_networking`&#13;
+&#13;
+- 设定创建表一开始但建表引擎&#13;
+设置表但默认存储引擎为MyISAM&#13;
+`mysqld --default-storage-engine=MyISAM`&#13;
+### 在配置文件中使用选项&#13;
+配置文件中不同但选项组是给不同但启动命令使用但，如果选项组名称与程序名称相同，则组中的选项将专门应用于该程序。</description><guid isPermaLink="true">https://kexi292.github.io/post/Learn%20MySQL%EF%BC%8802%EF%BC%89.html</guid><pubDate>Mon, 03 Jun 2024 08:03:05 +0000</pubDate></item><item><title>Learn MySQL（01）</title><link>https://kexi292.github.io/post/Learn%20MySQL%EF%BC%8801%EF%BC%89.html</link><description>### UNIX中启动MySQL服务器程序：&#13;
 &#13;
 - mysqld : 直接启动一个服务器进程。</description><guid isPermaLink="true">https://kexi292.github.io/post/Learn%20MySQL%EF%BC%8801%EF%BC%89.html</guid><pubDate>Mon, 03 Jun 2024 03:37:52 +0000</pubDate></item><item><title>leetcode链表</title><link>https://kexi292.github.io/post/leetcode-lian-biao.html</link><description>-[环形链表Ⅱ](https://leetcode.cn/problems/linked-list-cycle-ii/)&#13;
 问题：不太清楚其中的原理，目前的解决思路是当fast和slow相遇后，重定向slow到head。</description><guid isPermaLink="true">https://kexi292.github.io/post/leetcode-lian-biao.html</guid><pubDate>Fri, 31 May 2024 12:07:39 +0000</pubDate></item></channel></rss>
