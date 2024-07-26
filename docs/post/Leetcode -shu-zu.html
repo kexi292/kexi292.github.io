@@ -10,13 +10,9 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="二分查找 确定查找区间
-
-> 初始化`right`的时候是`nums.length`。">
+<meta name="description" content="数组  --用连续的内存空间，存储一组具有相同类型的数据。">
 <meta property="og:title" content="Leetcode 数组">
-<meta property="og:description" content="二分查找 确定查找区间
-
-> 初始化`right`的时候是`nums.length`。">
+<meta property="og:description" content="数组  --用连续的内存空间，存储一组具有相同类型的数据。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://kexi292.github.io/post/Leetcode%20-shu-zu.html">
 <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
@@ -76,7 +72,22 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>二分查找 确定查找区间</p>
+<div class="markdown-body" id="postBody"><p>数组  --用连续的内存空间，存储一组具有相同类型的数据。</p>
+<p>数组支持随机访问，根据下表随机访问的时间复杂度为O(1)。</p>
+<p>为什么数组能根据下表支持随机访问？</p>
+<blockquote>
+<p>计算机给每个内存单元分配一个地址，通过地址来访问内存中的数据，由于数组Array能根据下标计算地址（base_address + i * data_type_size）,就能直接访问对应的数据内容。</p>
+</blockquote>
+<p>为什么插入和删除低效？</p>
+<blockquote>
+<p>如果是在数组的末尾插入元素，不需要移动数据-O(1)。如果在开头插入元素，需要移动所有数据-O(n),插入每个位置的概率是一样的，平均时间复杂度为O(n)。</p>
+<p>如果Array的数据是有序的，那么上述正确。但是如果无序，数组只是被当作存储数据的集合。那么如果要把某个数据插入第k个位置，可以直接把第k位的数据搬移到数组元素最后，将新元素放入到第k个位置。</p>
+<p>删除操作也是类似，如果在数组末尾删除元素，-O(1)。如果i在数组开头删除元素，-O(n)，平均时间复杂度为-O(n)。</p>
+<p>如果不一定非得最求数组中数据的连续性，可以把多次删除操作集中在一起执行，删除效率会提高。</p>
+</blockquote>
+<p>ArrayList对比Array可以将很多操作封装起来，并支持动态扩容。</p>
+<p>业务开发，直接使用容器，如果是非常底层的开发，追求性能，那么数组会由于容器</p>
+<p>二分查找 确定查找区间</p>
 <blockquote>
 <p>初始化<code class="notranslate">right</code>的时候是<code class="notranslate">nums.length</code>。nums.length是越界的，因此查找区间是<code class="notranslate">[left,rignt)</code>。当初始化<code class="notranslate">right</code>的时候是<code class="notranslate">nums.length - 1</code>。查找区间就是<code class="notranslate">[left,rignt]</code>。</p>
 </blockquote>
